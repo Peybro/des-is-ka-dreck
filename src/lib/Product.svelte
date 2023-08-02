@@ -8,7 +8,9 @@
 <div class="product">
 	<img
 		class="cover"
-		src={($page.url.pathname === '/' ? 'produkte/Bilder/' : 'Bilder/') + product.img}
+		src={($page.url.pathname === '/' || $page.url.pathname === '/warenkorb'
+			? 'produkte/Bilder/'
+			: 'Bilder/') + product.img}
 		alt="Cover"
 	/>
 	<div class="info">
@@ -23,8 +25,8 @@
 		border: 1px solid black;
 		padding: 1rem;
 		display: flex;
-		margin-top: 1rem;
 		margin-bottom: 1rem;
+		text-decoration: none;
 
 		.cover {
 			width: 100px;
