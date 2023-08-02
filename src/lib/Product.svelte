@@ -27,9 +27,11 @@
 		display: flex;
 		margin-bottom: 1rem;
 		text-decoration: none;
+        background-color: aqua;
 
 		.cover {
 			width: 100px;
+            object-fit: scale-down;
 		}
 
 		.info {

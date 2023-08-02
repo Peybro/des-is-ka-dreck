@@ -6,10 +6,15 @@
 	$: product = $products.filter((product) => {
 		return product.title == $page.params.produkt;
 	})[0];
+	$: instancesInCart = $cart.filter((prod) => prod.title === product.title).length;
 </script>
 
 <Product {product} />
-<button class="buy-btn" on:click={() => ($cart = [...$cart, product])}>in Warenkorb legen</button>
+<button class="buy-btn" on:click={() => ($cart = [...$cart, product])}
+	>in Warenkorb legen {#if instancesInCart > 0}{`(bereits ${instancesInCart} Exemplar${
+			instancesInCart > 1 ? 'e' : ''
+		})`}{/if}</button
+>
 
 <style lang="scss">
 	.buy-btn {
