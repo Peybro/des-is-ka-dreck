@@ -1,5 +1,5 @@
 export const load = () => {
 	return {
-		title: 'Divider App'
+		title: 'Des is ka Dreck! Verlag'
 	};
 };

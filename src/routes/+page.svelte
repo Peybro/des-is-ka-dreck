@@ -1,34 +1,22 @@
 <script lang="ts">
-	import { divider, listLength } from '$lib/store';
+	import { products } from '$lib/store';
+	import Product from '$lib/Product.svelte';
 </script>
 
-{#each Array($listLength).fill(0) as _, i}
-	<!-- svelte-ignore a11y-click-events-have-key-events -->
-	<div
-		class="row"
-		class:green={(i + 1) % $divider === 0}
-		class:red={(i + 1) % $divider !== 0}
-		on:click={() => ($divider = i + 1)}
-	>
-		<h2>{i + 1}</h2>
-	</div>
-{/each}
+<section>
+	<h2>Angebote:</h2>
+	{#each $products as product}
+		<a href="produkte/{product.title}">
+			<Product {product}/>
+		</a>
+	{/each}
+</section>
 
 <style lang="scss">
-	.row {
-		display: flex;
-		justify-content: center;
-
-		&.green {
-			background-color: green;
-		}
-
-		&.red {
-			background-color: red;
-		}
-
-		h2 {
-			padding: 1rem;
+	section {
+		a {
+			display: block;
+			margin-bottom: 1rem;
 		}
 	}
 </style>
