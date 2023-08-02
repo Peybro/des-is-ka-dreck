@@ -1,6 +1,7 @@
 <script lang="ts">
 	export let heading: string;
 	import { cart } from '$lib/store';
+	import Nav from './Nav.svelte';
 </script>
 
 <header>

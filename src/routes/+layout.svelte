@@ -1,9 +1,12 @@
 <script lang="ts">
 	import Header from '$lib/Header.svelte';
+	import Nav from '$lib/Nav.svelte';
 	export let data;
 </script>
 
 <Header heading={data.title} />
+<Nav />
+
 <main>
 	<slot />
 </main>

@@ -1,15 +1,16 @@
 <script lang="ts">
-	import { products } from '$lib/store';
-	import Product from '$lib/Product.svelte';
+	import ProdList from '$lib/ProdList.svelte';
 </script>
 
 <section>
-	<h2>Angebote:</h2>
-	{#each $products as product}
-		<a href="produkte/{product.title}">
-			<Product {product}/>
-		</a>
-	{/each}
+	<h2>Unser WOW! Angebot:</h2>
+	<a href="/produkte/Innsbruck%20für%20Depperl"
+		><img src="angebote/depperlbuch.png" alt="WOW Angebot" /></a
+	>
+</section>
+
+<section>
+	<ProdList />
 </section>
 
 <style lang="scss">
@@ -17,6 +18,11 @@
 		a {
 			display: block;
 			margin-bottom: 1rem;
+		}
+
+		& a > img {
+			max-height: 85vh;
+			object-fit: scale-down;
 		}
 	}
 </style>
