@@ -22,7 +22,7 @@
 
 		& a > img {
 			max-height: 85vh;
-			max-width: 100vw;
+			max-width: 100%;
 			object-fit: scale-down;
 		}
 	}
