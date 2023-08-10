@@ -1,11 +1,14 @@
 <script lang="ts">
 	import Header from '$lib/Header.svelte';
 	import Nav from '$lib/Nav.svelte';
+	import Footer from '$lib/Footer.svelte';
+	
 	export let data;
 </script>
 
 <Header heading={data.title} />
 <Nav />
+<Footer />
 
 <main>
 	<slot />
