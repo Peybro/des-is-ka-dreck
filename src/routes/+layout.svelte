@@ -8,11 +8,12 @@
 
 <Header heading={data.title} />
 <Nav />
-<Footer />
 
 <main>
 	<slot />
 </main>
+
+<Footer />
 
 <style lang="scss" global>
 	*,
