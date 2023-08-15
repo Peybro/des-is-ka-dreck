@@ -10,7 +10,7 @@ type Product = {
 export const products = writable([
 	{
 		title: 'Wien für Fortgeschrittene Deppen',
-		price: 24.95,
+		price: 34.99,
 		content: '<h4>Ein Guide für die Stadt der Kultur</h4>',
 		img: 'wien.png'
 	},
@@ -30,7 +30,7 @@ export const products = writable([
 	},
 	{
 		title: 'Salzburg für Profi Depperl',
-		price: 24.95,
+		price: 39.99,
 		content: '<h4>Die Stadt der Musik</h4>',
 		img: 'salzburg.png'
 	}
