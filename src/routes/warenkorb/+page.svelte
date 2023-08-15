@@ -13,12 +13,14 @@
 		{#each [...new Set($cart)] as product, i}
 			<div class="cart-item">
 				<div>
-					<Product {product} />
+					<a href="/produkte/{product.title}">
+						<Product {product} />
+					</a>
 					<button
 						class="remove-btn"
 						on:click={() => {
 							$cart = $cart.filter((_, index) => index !== i);
-						}}>X</button
+						}}>1x entfernen</button
 					>
 				</div>
 				<input
@@ -27,8 +29,8 @@
 					value={$cart.filter((prod) => prod.title === product.title).length}
 				/>
 			</div>
+			<hr />
 		{/each}
-		<hr />
 		<h3>Gesamt: {sum}€</h3>
 	</div>
 {/if}
@@ -45,12 +47,18 @@
 				border: none;
 				padding: 0.6rem;
 				color: white;
+				cursor: pointer;
 			}
 
 			& > div {
 				display: flex;
 				gap: 1rem;
 				align-items: center;
+
+				a {
+					text-decoration: none;
+					color: black;
+				}
 			}
 
 			input {

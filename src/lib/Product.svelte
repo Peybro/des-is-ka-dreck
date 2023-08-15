@@ -33,6 +33,7 @@
 		.cover {
 			width: 100px;
 			object-fit: scale-down;
+			align-self: flex-start;
 		}
 
 		.info {

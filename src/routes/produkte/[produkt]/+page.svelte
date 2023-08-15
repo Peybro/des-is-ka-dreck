@@ -16,12 +16,30 @@
 		})`}{/if}</button
 >
 
+{#if $cart.some((prod) => prod.title === product.title)}
+	<button
+		class="remove-btn"
+		on:click={() => {
+			$cart = $cart.filter((prod) => prod.title !== product.title);
+		}}>alle Exemplare aus Warenkorb entfernen</button
+	>
+{/if}
+
 <style lang="scss">
-	.buy-btn {
+	button {
 		margin-top: 1rem;
 		padding: 0.5rem;
 		border: 1px solid black;
-		background-color: white;
 		cursor: pointer;
+		width: 100%;
+
+		&.buy-btn {
+			background-color: white;
+		}
+
+		&.remove-btn {
+			background-color: red;
+			color: white;
+		}
 	}
 </style>
