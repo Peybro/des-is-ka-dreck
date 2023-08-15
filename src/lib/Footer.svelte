@@ -1,9 +1,21 @@
+<script lang="ts">
+	let duKek = false;
+</script>
+
 <footer>
+	{#if duKek}
+		<img
+			src="https://www.deborahhalverson.com/authorsite/wp-content/uploads/2010/07/dummies_logo_transparent-200x200.png"
+			alt="Dummie"
+			class="dummie-img"
+		/>
+	{/if}
+
 	<h3>© Des is ka Dreck! Verlag</h3>
-	<h3>Alle Rechte vorbehalten... du kek</h3>
+	<h3>Alle Rechte vorbehalten... <button on:click={() => (duKek = !duKek)}>du kek</button></h3>
 </footer>
 
-<style>
+<style lang="scss" scoped>
 	footer {
 		width: 100%;
 		height: 200px;
@@ -13,5 +25,20 @@
 		justify-content: center;
 		align-items: center;
 		color: white;
+
+		button {
+			background-color: transparent;
+			border: none;
+			color: white;
+			font-size: 1rem;
+			cursor: pointer;
+			font-weight: bolder;
+		}
+
+		img {
+			position: absolute;
+			margin-top: -400px;
+			margin-left: -200px;
+		}
 	}
 </style>
