@@ -1,5 +1,5 @@
 export const load = () => {
 	return {
-		title: 'Des is ka Dreck! Verlag'
+		title: 'Des is ka Dreck!'
 	};
 };

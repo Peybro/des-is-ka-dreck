@@ -1,42 +1,50 @@
 <script lang="ts">
 	export let product: { title: string; price: number; img: string; content: string };
 	import { page } from '$app/stores';
-
-	console.log($page.url.pathname);
 </script>
 
 <div class="product">
 	<img
 		class="cover"
-		src={($page.url.pathname === '/' || $page.url.pathname === '/warenkorb'
-			? 'produkte/Bilder/'
-			: 'Bilder/') + product.img}
+		src={(!$page.url.pathname.includes('produkte/') ? 'produkte/' : '') + 'Bilder/' + product.img}
 		alt="Cover"
 	/>
 	<div class="info">
-		<h2>{product.title}</h2>
-		<h3>{product.price}€</h3>
-		{@html product.content}
+		<div class="not-price">
+			<h2>{product.title}</h2>
+			{#if $page.url.pathname.includes('produkte/')}
+				{@html product.content}
+			{/if}
+		</div>
+		<h3 class="price">{product.price}€</h3>
 	</div>
 </div>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.product {
 		border: 1px solid black;
 		padding: 1rem;
 		display: flex;
+		flex-direction: row;
 		margin-bottom: 1rem;
 		text-decoration: none;
-        background-color: aqua;
+		background-color: aqua;
 
 		.cover {
 			width: 100px;
-            object-fit: scale-down;
+			object-fit: scale-down;
 		}
 
 		.info {
 			padding-left: 1rem;
 			padding-right: 1rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			.price {
+				margin-top: 2rem;
+			}
 		}
 	}
 </style>

@@ -1,15 +1,14 @@
 <script lang="ts">
 	export let heading: string;
 	import { cart } from '$lib/store';
-	import Nav from './Nav.svelte';
 </script>
 
 <header>
-	<a href="/"><h1>{heading}</h1></a>
+	<a href="/" class="heading"><h1>{heading}</h1></a>
 	<a href="/warenkorb" class="cart-btn">Warenkorb ({$cart.length})</a>
 </header>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	header {
 		padding-top: 1rem;
 		padding-bottom: 1rem;
@@ -19,9 +18,13 @@
 		display: flex;
 		justify-content: space-between;
 
+		.heading:link,
+		.heading:visited {
+			color: rgb(169, 0, 169);
+		}
+
 		h1 {
 			margin: 0 1rem;
-			color: white;
 		}
 
 		.cart-btn {

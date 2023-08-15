@@ -18,12 +18,12 @@
 		a {
 			display: block;
 			margin-bottom: 1rem;
-		}
 
-		& a > img {
-			max-height: 85vh;
-			max-width: 100%;
-			object-fit: scale-down;
+			& > img {
+				max-height: 85vh;
+				max-width: 100%;
+				object-fit: scale-down;
+			}
 		}
 	}
 </style>

@@ -2,7 +2,7 @@
 	import Product from '$lib/Product.svelte';
 	import { cart } from '$lib/store';
 
-	$: sum = $cart.reduce((acc, curr) => acc + curr.price, 0);
+	$: sum = $cart.reduce((acc, curr) => acc + curr.price, 0).toFixed(2);
 </script>
 
 <h2>Warenkorb</h2>
@@ -10,15 +10,22 @@
 	<p>Der Warenkorb ist leer.</p>
 {:else}
 	<div class="list">
-		{#each $cart as product, i}
+		{#each [...new Set($cart)] as product, i}
 			<div class="cart-item">
-				<button
-					class="remove-btn"
-					on:click={() => {
-						$cart = $cart.filter((_, index) => index !== i);
-					}}>X</button
-				>
-				<Product {product} />
+				<div>
+					<Product {product} />
+					<button
+						class="remove-btn"
+						on:click={() => {
+							$cart = $cart.filter((_, index) => index !== i);
+						}}>X</button
+					>
+				</div>
+				<input
+					disabled
+					type="number"
+					value={$cart.filter((prod) => prod.title === product.title).length}
+				/>
 			</div>
 		{/each}
 		<hr />
@@ -33,9 +40,23 @@
 		gap: 1rem;
 
 		.cart-item {
-			display: flex;
-			gap: 1rem;
-			align-items: center;
+			button {
+				background-color: red;
+				border: none;
+				padding: 0.6rem;
+				color: white;
+			}
+
+			& > div {
+				display: flex;
+				gap: 1rem;
+				align-items: center;
+			}
+
+			input {
+				width: 100%;
+				text-align: center;
+			}
 		}
 	}
 </style>

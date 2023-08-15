@@ -9,6 +9,12 @@ type Product = {
 
 export const products = writable([
 	{
+		title: 'Wien für Fortgeschrittene Deppen',
+		price: 24.95,
+		content: '<h4>Ein Guide für die Stadt der Kultur</h4>',
+		img: 'wien.png'
+	},
+	{
 		title: 'Handbuch für medizinische Fußpflege',
 		price: 79.99,
 		content:
@@ -18,8 +24,15 @@ export const products = writable([
 	{
 		title: 'Innsbruck für Depperl',
 		price: 24.95,
-		content: '<p>Test 2</p>',
+		content:
+			'<p>Du willst nach Innsbruck reisen, aber du hast keine Ahnung, was dich dort erwartet? Kein Problem, wir haben den perfekten Reiseführer für dich:</p> <h4>"Innsbruck für Depperl - Ein humorvoller Guide für die Stadt der Berge</h4><p>In diesem Buch erfährst du alles, was du über Innsbruck wissen musst, von den besten Sehenswürdigkeiten über die leckersten Spezialitäten bis hin zu den lustigsten Aktivitäten.</p><p>Außerdem verraten wir dir, wie du dich mit den Einheimischen anfreundest, ohne dich zum Affen zu machen.</p><h3>Und das Beste:</h3><p>Dieser Reiseführer ist eine Hommage an unseren lieben Freund und Innsbruck-Laie, der uns immer wieder mit seinen Geschichten zum Lachen bringt.</p><br/><p>Also, worauf wartest du noch? Schnapp dir dieses Buch und mach dich auf den Weg nach Innsbruck - die Stadt der Berge und des Humors!</p>',
 		img: 'innsbruck-für-depperl.png'
+	},
+	{
+		title: 'Salzburg für Profi Depperl',
+		price: 24.95,
+		content: '<h4>Die Stadt der Musik</h4>',
+		img: 'salzburg.png'
 	}
 ] as Product[]);
 
