@@ -49,8 +49,8 @@
 				color: white;
 				cursor: pointer;
 				width: 100%;
-				margin: 0 1rem;
-				border-radius: 0.5rem;
+				margin: 1rem 0;
+				border-radius: 0.3rem;
 			}
 
 			& > div {
