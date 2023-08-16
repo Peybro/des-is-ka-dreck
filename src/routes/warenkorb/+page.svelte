@@ -16,18 +16,18 @@
 					<a href="/produkte/{product.title}">
 						<Product {product} />
 					</a>
-
-
 				</div>
 				<input
 					disabled
-					type="number"
-					value={$cart.filter((prod) => prod.title === product.title).length}
+					type="text"
+					value="{$cart.filter((prod) => prod.title === product.title).length}x"
 				/>
-				<button class="remove-btn"
-				    on:click={()=>{
-                      $cart=$cart.filter((_,index)=>index!==i);
-					}}>1x entfernen</button>
+				<button
+					class="remove-btn"
+					on:click={() => {
+						$cart = $cart.filter((_, index) => index !== i);
+					}}>ein Exemplar entfernen</button
+				>
 			</div>
 			<hr />
 		{/each}
@@ -42,7 +42,9 @@
 		gap: 1rem;
 
 		.cart-item {
-            width: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 0.2rem;
 
 			button {
 				background-color: red;
@@ -51,8 +53,8 @@
 				color: white;
 				cursor: pointer;
 				width: 100%;
-				margin: 1rem 0;
-				border-radius: 0.3rem;
+				// border-radius: 0.3rem;
+				border: 1px solid black;
 			}
 
 			& > div {
@@ -63,6 +65,7 @@
 				a {
 					text-decoration: none;
 					color: black;
+					width: 100%;
 				}
 			}
 

@@ -29,6 +29,7 @@
 		margin-bottom: 1rem;
 		text-decoration: none;
 		background-color: aqua;
+		width: 100%;
 
 		.cover {
 			width: 100px;
