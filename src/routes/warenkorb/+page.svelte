@@ -42,6 +42,8 @@
 		gap: 1rem;
 
 		.cart-item {
+            width: 100%;
+
 			button {
 				background-color: red;
 				border: none;
