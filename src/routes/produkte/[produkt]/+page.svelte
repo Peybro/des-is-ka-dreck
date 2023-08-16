@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { products, cart } from '$lib/store';
+	import { cart } from '$lib/store';
 	import Product from '$lib/Product.svelte';
 
-	$: product = $products.filter((product) => {
+	export let data;
+
+	$: product = data.products.filter((product) => {
 		return product.title == $page.params.produkt;
 	})[0];
 	$: instancesInCart = $cart.filter((prod) => prod.title === product.title).length;

@@ -1,5 +1,7 @@
 <script lang="ts">
 	import ProdList from '$lib/ProdList.svelte';
+
+	export let data;
 </script>
 
 <section>
@@ -10,7 +12,7 @@
 </section>
 
 <section>
-	<ProdList />
+	<ProdList products={data.products} />
 </section>
 
 <style lang="scss">
