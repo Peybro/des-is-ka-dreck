@@ -16,18 +16,18 @@
 					<a href="/produkte/{product.title}">
 						<Product {product} />
 					</a>
-					<button
-						class="remove-btn"
-						on:click={() => {
-							$cart = $cart.filter((_, index) => index !== i);
-						}}>1x entfernen</button
-					>
+
+
 				</div>
 				<input
 					disabled
 					type="number"
 					value={$cart.filter((prod) => prod.title === product.title).length}
 				/>
+				<button class="remove-btn"
+				    on:click={()=>{
+                      $cart=$cart.filter((_,index)=>index!==i);
+					}}>1x entfernen</button>
 			</div>
 			<hr />
 		{/each}
@@ -48,6 +48,7 @@
 				padding: 0.6rem;
 				color: white;
 				cursor: pointer;
+				width: 100%;
 			}
 
 			& > div {
