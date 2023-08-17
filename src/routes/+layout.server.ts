@@ -1,4 +1,4 @@
-import type { Product } from '$lib/types';
+import type { Author, Product } from '$lib/types';
 
 export const load = () => {
 	return {
@@ -65,6 +65,6 @@ export const load = () => {
 				},
 				bio: '- nett.'
 			}
-		]
+		] as Author[]
 	};
 };
