@@ -3,7 +3,8 @@
 <div class="autor">
 	<img src="/autoren/timo.png" alt="Autor Timo" class="timo" />
 	<div>
-		<h2>Timo Herzog</h2>
+		<h2>Timo H.
+</h2>
 		<p><i>- Geboren als Mann, entwickelt zum ultimativen Skispringer.</i></p>
 		<p>
 			Er wurde Ende des 18. Jahrhunderts in der <a
@@ -64,7 +65,7 @@
 		alt="Autor Wolfgang"
 	/>
 	<div>
-		<h2>Wolfgang Amadeus Mozart</h2>
+		<h2>Wolfgang A. M.</h2>
 		<p>Wolfgang Amadeus Mozart - Geboren als Mann, entwickelt zum ultimativen Komponisten.</p>
 	</div>
 </div>
@@ -72,7 +73,7 @@
 <div class="autor">
 	<img src="/autoren/thomas.png" alt="Autor Thomas" />
 	<div>
-		<h2>Thomas Kretschmann</h2>
+		<h2>Thomas K.</h2>
 		<p><i>(in engeren Kreisen auch M.C. Cool, the Pimp)</i></p>
 		<p>
 			- wurde in den späten 1990er Jahren geboren und war maßgeblich für das Ende des Kalten Krieges
@@ -97,7 +98,7 @@
 		alt="Autor Danilo"
 	/>
 	<div>
-		<h2>Danilo May</h2>
+		<h2>Danilo M.</h2>
 		<i>- nett.</i>
 	</div>
 </div>
