@@ -8,6 +8,7 @@
 	<div class="author">
 		<div>
 			<h2>{author.name}</h2>
+			<p><a href="mailto:{author.mail}">{author.mail}</a></p>
 			<img
 				src={author.img.extern ? author.img.src : `/autoren/${author.img.src}`}
 				alt="Autor {author.name.split(' ')[0]}"
