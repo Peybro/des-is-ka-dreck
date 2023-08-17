@@ -10,8 +10,8 @@
 		alt="Cover"
 	/>
 	<div class="info">
+		<h2>{product.title}</h2>
 		<div class="not-price">
-			<h2>{product.title}</h2>
 			{#if $page.url.pathname.includes('produkte/')}
 				{@html product.content}
 			{/if}
@@ -32,7 +32,7 @@
 		width: 100%;
 
 		.cover {
-			width: 100px;
+			width: 10rem;
 			object-fit: scale-down;
 			align-self: flex-start;
 		}
