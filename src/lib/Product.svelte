@@ -12,6 +12,7 @@
 		alt="Cover"
 	/>
 	{#if product.img.includes("keks")}
+	  <h4>#{product.img.split(".png")[0].split("keks/")[1]}</h4>
       {$cart.some(item=>item.img===product.img)?`Schon ${$cart.filter(item=>item.img===product.img). length}x`:"Noch nicht"} gefunden.
 	{/if}
 	</div>
