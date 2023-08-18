@@ -4,6 +4,10 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<title>Des is ka Dreck!</title>
+</svelte:head>
+
 <section>
 	<h2>Unser WOW! Angebot:</h2>
 	<a href="/produkte/Innsbruck%20für%20Depperl"

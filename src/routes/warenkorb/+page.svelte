@@ -5,7 +5,12 @@
 	$: sum = $cart.reduce((acc, curr) => acc + curr.price, 0).toFixed(2);
 </script>
 
+<svelte:head>
+	<title>kauf du Sau!</title>
+</svelte:head>
+
 <h2>Warenkorb</h2>
+
 {#if $cart.length === 0}
 	<p>Der Warenkorb ist leer.</p>
 {:else}

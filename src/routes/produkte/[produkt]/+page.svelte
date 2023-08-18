@@ -2,14 +2,25 @@
 	import { page } from '$app/stores';
 	import { cart } from '$lib/store';
 	import Product from '$lib/Product.svelte';
+	import type { Product as ProductType } from '$lib/types';
 
 	export let data;
 
-	$: product = data.products.filter((product) => {
+	$: product = data.products.filter((product: ProductType) => {
 		return product.title == $page.params.produkt;
-	})[0];
+	})[0] || {
+		title: decodeURI($page.url.pathname.toString().split('/produkte/')[1]),
+		price: $page.url.pathname.toString().length,
+		content: '<h3>random Kek Buch</h3><p>Hier brauchen wir noch Text</p>',
+		img: 'kek.png'
+	};
+
 	$: instancesInCart = $cart.filter((prod) => prod.title === product.title).length;
 </script>
+
+<svelte:head>
+	<title>{product.price}€? WOW!</title>
+</svelte:head>
 
 <Product {product} />
 <button class="buy-btn" on:click={() => ($cart = [...$cart, product])}

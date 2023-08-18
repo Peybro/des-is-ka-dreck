@@ -2,6 +2,10 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<title>Mozart >> Beethoven</title>
+</svelte:head>
+
 <h1>Unsere Autoren</h1>
 
 {#each data.authors as author}

@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>That's no German beer!</title>
+</svelte:head>
+
 <h2>Unser WOW! Angebot:</h2>
 <p>(nur gültig bis 9.7.2024)</p>
 <a href="/produkte/Innsbruck%20für%20Depperl"
