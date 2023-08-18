@@ -33,6 +33,9 @@
 					class="remove-btn"
 					on:click={() => {
 						$cart = $cart.filter((_, index) => index !== i);
+						if ($cart.length === 0) {
+							Cookies.remove('allFabios');
+						}
 					}}>ein Exemplar entfernen</button
 				>
 			</div>
@@ -40,9 +43,10 @@
 		{/each}
 
 		{#if Cookies.get('allFabios')}
-			<h1>Du hast alle Fabios gefunden und bist der größte Sammler dieser Galaxie!</h1>
-			<h2>Herzlichen Glückwunsch im Namen aller <a href="/about">Autoren</a></h2>
-			<hr />
+			<div class="all-found">
+				<h1>Du hast alle Fabios gefunden und bist der größte Sammler dieser Galaxie!</h1>
+				<h2>Herzlichen Glückwunsch im Namen aller <a href="/about">Autoren</a></h2>
+			</div>
 		{/if}
 
 		<h3>Gesamt: {sum}€</h3>
@@ -50,6 +54,7 @@
 			class="remove-btn"
 			on:click={() => {
 				$cart = [];
+				Cookies.remove('allFabios');
 			}}>Warenkorb leeren</button
 		>
 	</div>
@@ -98,5 +103,11 @@
 		width: 100%;
 		// border-radius: 0.3rem;
 		border: 1px solid black;
+	}
+
+	.all-Found {
+		background-color: pink;
+		color: black;
+		padding: 0.5rem;
 	}
 </style>
