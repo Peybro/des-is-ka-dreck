@@ -1,10 +1,10 @@
 <script lang="ts">
 	let duKek = false;
 
-	$: setTineout(()=>{
 
-		if(duKek)alert("Psssst, wusstest du schon, dass du durch ein falsches Buch Fabios sammeln kannst!? 🤫")
-	},1000);
+
+	 $: if(duKek)alert("Psssst, wusstest du schon, dass du durch ein falsches Buch Fabios sammeln kannst!? 🤫")
+
 </script>
 
 <footer>
