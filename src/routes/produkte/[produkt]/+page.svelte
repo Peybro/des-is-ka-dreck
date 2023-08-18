@@ -6,13 +6,17 @@
 
 	export let data;
 
-	$: product = data.products.filter((product: ProductType) => {
+	$: product = data.products.find((product: ProductType) => {
 		return product.title == $page.params.produkt;
-	})[0] || {
+	}) || {
 		title: decodeURI($page.url.pathname.toString().split('/produkte/')[1]),
 		price: $page.url.pathname.toString().length,
-		content: '<h3>random Kek Buch</h3><p>Hier brauchen wir noch Text</p>',
-		img: 'kek.png'
+		content: $cart.some((item) => item.content.startsWith('<input type="hidden"'))
+			? `<input type="hidden" value="0"/><h2>Ein Wildes Fabio!</h2><h3>Woohoo ein neues Fabio!</h3><p>Schnell pack es in den Warenkorb zu den anderen!!</p>`
+			: `<input type="hidden" value="${
+					$cart.filter((item) => item.content.startsWith('<input type="hidden"')).length + 1
+			  }"/><h1>Gotta catch 'em all!'</h1><h2>Du hast ein wildes Fabio entdeckt!</h2><p>Packe ihn in deinen Warenkorb und sammle alle Fabios...</p><h3>Werde der GRÖßTE Fabio Sammler der Galaxie!!!!</h3>`,
+		img: data.randomImg
 	};
 
 	$: instancesInCart = $cart.filter((prod) => prod.title === product.title).length;

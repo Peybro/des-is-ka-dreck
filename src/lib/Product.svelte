@@ -35,6 +35,7 @@
 			width: 10rem;
 			object-fit: scale-down;
 			align-self: flex-start;
+			border: 1px solid gray;
 		}
 
 		.info {

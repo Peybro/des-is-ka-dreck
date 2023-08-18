@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Cookies from 'js-cookie';
+
 	import Product from '$lib/Product.svelte';
 	import { cart } from '$lib/store';
 
@@ -36,11 +38,28 @@
 			</div>
 			<hr />
 		{/each}
+
+		{#if Cookies.get('allFabios')}
+			<h1>Du hast alle Fabios gefunden und bist der größte Sammler dieser Galaxie!</h1>
+			<h2>Herzlichen Glückwunsch im Namen aller <a href="/about">Autoren</a></h2>
+			<hr />
+		{/if}
+
 		<h3>Gesamt: {sum}€</h3>
+		<button
+			class="remove-btn"
+			on:click={() => {
+				$cart = [];
+			}}>Warenkorb leeren</button
+		>
 	</div>
 {/if}
 
 <style lang="scss">
+	h2 {
+		margin-bottom: 1rem;
+	}
+
 	.list {
 		display: flex;
 		flex-direction: column;
@@ -50,17 +69,6 @@
 			display: flex;
 			flex-direction: column;
 			gap: 0.2rem;
-
-			button {
-				background-color: red;
-				border: none;
-				padding: 0.6rem;
-				color: white;
-				cursor: pointer;
-				width: 100%;
-				// border-radius: 0.3rem;
-				border: 1px solid black;
-			}
 
 			& > div {
 				display: flex;
@@ -79,5 +87,16 @@
 				text-align: center;
 			}
 		}
+	}
+
+	.remove-btn {
+		background-color: red;
+		border: none;
+		padding: 0.6rem;
+		color: white;
+		cursor: pointer;
+		width: 100%;
+		// border-radius: 0.3rem;
+		border: 1px solid black;
 	}
 </style>
