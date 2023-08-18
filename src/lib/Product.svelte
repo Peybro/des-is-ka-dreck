@@ -32,7 +32,7 @@
 		width: 100%;
 
 		.cover {
-			width: 10rem;
+			width: 9rem;
 			object-fit: scale-down;
 			align-self: flex-start;
 			border: 1px solid gray;
