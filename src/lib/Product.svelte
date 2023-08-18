@@ -1,14 +1,20 @@
 <script lang="ts">
 	export let product: { title: string; price: number; img: string; content: string };
 	import { page } from '$app/stores';
+	import { cart } from "$lib/store"
 </script>
 
 <div class="product">
+<div>
 	<img
 		class="cover"
 		src={(!$page.url.pathname.includes('produkte/') ? 'produkte/' : '') + 'Bilder/' + product.img}
 		alt="Cover"
 	/>
+	{#if product.img.includes("keks")}
+      {$cart.some(item=>item.img===product.img)?`Schon ${$cart.filter(item=>item.img===product.img). length}x`:"Noch nicht"} gefunden.
+	{/if}
+	</div>
 	<div class="info">
 		<h2>{product.title}</h2>
 		<div class="not-price">
