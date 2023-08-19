@@ -59,6 +59,8 @@
 		text-decoration: none;
 		background-color: aqua;
 		width: 100%;
+		// overflow: hidden;
+		// font-size: small;
 
 		.cover {
 			width: 9rem;
@@ -73,6 +75,7 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			word-break: break-all;
 
 			.price {
 				margin-top: 2rem;
