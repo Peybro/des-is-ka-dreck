@@ -4,6 +4,8 @@
 	import Product from '$lib/Product.svelte';
 	import { cart } from '$lib/store';
 
+	export let data;
+
 	$: sum = $cart.reduce((acc, curr) => acc + curr.price, 0).toFixed(2);
 </script>
 
@@ -21,7 +23,15 @@
 			<div class="cart-item">
 				<div>
 					<a href="/produkte/{product.title}">
-						<Product {product} />
+						<Product
+							{product}
+							fabio={product.img.includes('/keks/')
+								? data.fabios.find(
+										(fabio) =>
+											fabio.number === parseInt(product.img.split('.png')[0].split('/keks/')[1])
+								  )
+								: undefined}
+						/>
 					</a>
 				</div>
 				<input
@@ -50,6 +60,7 @@
 		{/if}
 
 		<h3>Gesamt: {sum}€</h3>
+		<a href="/checkout" class="buy-btn">Bestellen</a>
 		<button
 			class="remove-btn"
 			on:click={() => {
@@ -94,18 +105,27 @@
 		}
 	}
 
-	.remove-btn {
-		background-color: red;
-		border: none;
+	button,
+	a.buy-btn {
 		padding: 0.6rem;
 		color: white;
 		cursor: pointer;
 		width: 100%;
 		// border-radius: 0.3rem;
 		border: 1px solid black;
+		text-align: center;
+
+		&.remove-btn {
+			background-color: red;
+		}
+
+		&.buy-btn {
+			background-color: lightgreen;
+			color: black;
+		}
 	}
 
-	.all-Found {
+	.all-found {
 		background-color: pink;
 		color: black;
 		padding: 0.5rem;

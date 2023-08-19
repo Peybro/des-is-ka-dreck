@@ -9,7 +9,7 @@
 	$: product = data.products.find((product: ProductType) => {
 		return product.title == $page.params.produkt;
 	}) || {
-		title: decodeURI($page.url.pathname.toString().split('/produkte/')[1]),
+		title: `Gefunden auf ${decodeURI($page.url.pathname.toString().split('/produkte')[1])}`,
 		price: $page.url.pathname.toString().length,
 		content: $cart.some((item) => item.content.startsWith('<input type="hidden"'))
 			? `<input type="hidden" value="0"/><h2>Ein Wildes Fabio!</h2><h3>Woohoo ein neues Fabio!</h3><p>Schnell pack es in den Warenkorb zu den anderen!!</p>`

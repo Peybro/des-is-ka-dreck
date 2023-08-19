@@ -41,7 +41,7 @@
 	<div class="info">
 		<h2>{product.title}</h2>
 		<div class="not-price">
-			{#if $page.url.pathname.includes('produkte/')}
+			{#if $page.url.pathname.includes('produkte/') || $page.url.pathname.includes('warenkorb') || $page.url.pathname.includes('checkout')}
 				{@html product.content}
 			{/if}
 		</div>

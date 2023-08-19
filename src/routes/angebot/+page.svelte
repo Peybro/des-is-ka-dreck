@@ -4,6 +4,7 @@
 
 <h2>Unser WOW! Angebot:</h2>
 <p>(nur gültig bis 9.7.2024)</p>
+
 <a href="/produkte/Innsbruck%20für%20Depperl"
 	><img src="angebote/depperlbuch.png" alt="WOW Angebot" /></a
 >
