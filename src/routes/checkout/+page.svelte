@@ -35,11 +35,7 @@
 			<p>Dein Paket ist auf dem Weg an die <b>richtige</b> Adresse.</p>
 
 			<Product {product} fabio={data.fabios.find((fabio) => fabio.number === rndNr)} />
-			<button
-				class:mute={$cart.some((item) => (item.img = product.img))}
-				class="buy-btn"
-				on:click={() => ($cart = [product])}>in Warenkorb legen</button
-			>
+			<button class="buy-btn" on:click={() => ($cart = [product])}>in Warenkorb legen</button>
 		</div>
 		<a href="/" class="back-link">zurück zur Startseite</a>
 	</div>
@@ -82,7 +78,10 @@
 		</div>
 
 		<button
-			on:click={() => (bestellt = true)}
+			on:click={() => {
+				bestellt = true;
+				$cart = [];
+			}}
 			class="order-btn"
 			class:mute={name === '' || street === '' || number === '' || plz === '' || city === ''}
 			>Bestellen</button
