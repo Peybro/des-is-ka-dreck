@@ -1,10 +1,8 @@
 <script lang="ts">
 	let duKek = false;
 
-
-
-	 $: if(duKek)alert("Psssst, wusstest du schon, dass du durch ein falsches Buch Fabios sammeln kannst!? 🤫")
-
+	$: if (duKek)
+		alert('Psssst, wusstest du schon, dass du durch ein falsches Buch Fabios sammeln kannst!? 🤫');
 </script>
 
 <footer>

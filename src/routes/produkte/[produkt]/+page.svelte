@@ -16,8 +16,16 @@
 			: `<input type="hidden" value="${
 					$cart.filter((item) => item.content.startsWith('<input type="hidden"')).length + 1
 			  }"/><h1>Gotta catch 'em all!'</h1><h2>Du hast ein wildes Fabio entdeckt!</h2><p>Packe ihn in deinen Warenkorb und sammle alle Fabios...</p><h3>Werde der GRÖßTE Fabio Sammler der Galaxie!!!!</h3>`,
-		img: data.randomImg
+		img: `/keks/${data.randomInt}.png`
 	};
+
+	$: fabio = product.img.includes('/keks/')
+		? data.fabios.find((fabio) => fabio.number === data.randomInt)
+		: {
+				name: 'Fabio',
+				number: 0,
+				rarity: 'dummy'
+		  };
 
 	$: instancesInCart = $cart.filter((prod) => prod.title === product.title).length;
 </script>
@@ -26,7 +34,7 @@
 	<title>{product.price}€? WOW!</title>
 </svelte:head>
 
-<Product {product} />
+<Product {product} {fabio} />
 <button class="buy-btn" on:click={() => ($cart = [...$cart, product])}
 	>in Warenkorb legen {#if instancesInCart > 0}{`(bereits ${instancesInCart} Exemplar${
 			instancesInCart > 1 ? 'e' : ''

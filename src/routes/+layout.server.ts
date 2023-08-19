@@ -1,4 +1,4 @@
-import type { Author, Product } from '$lib/types';
+import type { Author, Fabio, Product } from '$lib/types';
 
 export const load = () => {
 	return {
@@ -65,6 +65,203 @@ export const load = () => {
 				},
 				bio: '- nett.'
 			}
-		] as Author[]
+		] as Author[],
+		fabios: [
+			{
+				number: 1,
+				name: 'Swagger Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 2,
+				name: 'Scheißender Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 3,
+				name: 'Happy Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 4,
+				name: 'Safety First Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 5,
+				name: 'Lustiger Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 6,
+				name: 'PC Principal Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 7,
+				name: 'Verführerischer Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 8,
+				name: 'Eselohren Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 9,
+				name: 'Babbo Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 10,
+				name: 'Gang Member Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 11,
+				name: 'Haha schau mal ich bin lustig-Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 12,
+				name: 'Breitsmile Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 13,
+				name: 'Überraschter Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 14,
+				name: 'Auf Teile Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 15,
+				name: 'Doppelkinn Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 16,
+				name: 'Smallface Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 17,
+				name: 'Trollface Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 18,
+				name: 'Naturburschen Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 19,
+				name: 'Legalize it Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 20,
+				name: 'Ich raff nix-Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 21,
+				name: 'Verwirrter aber glücklicher Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 22,
+				name: 'Gleich gibts Schelln-Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 23,
+				name: 'Langweil mich net-Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 24,
+				name: 'Schmerzerfüllter Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 25,
+				name: 'Orgasmus Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 26,
+				name: 'Blinselnder Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 27,
+				name: 'Bigbrain Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 28,
+				name: 'Dreh dich um und küss mich-Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 29,
+				name: 'Happy Karen-Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 30,
+				name: 'Crazy Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 31,
+				name: 'After Rave Fabio',
+				rarity: 'unnormal selten'
+			},
+			{
+				number: 32,
+				name: 'Boomer macht Selfie-Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 33,
+				name: 'Swagger Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 34,
+				name: 'Gefährlicher Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 35,
+				name: 'Gefährlicherer Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 36,
+				name: 'Naughty Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 37,
+				name: 'Geblendeter Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 38,
+				name: 'Sonnen Fabio',
+				rarity: 'common'
+			},
+			{
+				number: 39,
+				name: 'Raver Fabio',
+				rarity: 'common'
+			}
+		] as Fabio[]
 	};
 };

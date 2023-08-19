@@ -4,6 +4,6 @@ export const load = () => {
 	}
 
 	return {
-		randomImg: `/keks/${randomInt(0, 38)}.png`
+		randomInt: randomInt(1, 39)
 	};
 };

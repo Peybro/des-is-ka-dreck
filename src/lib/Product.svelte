@@ -1,20 +1,42 @@
 <script lang="ts">
-	export let product: { title: string; price: number; img: string; content: string };
+	import type { Fabio, Product } from './types';
 	import { page } from '$app/stores';
-	import { cart } from "$lib/store"
+	import { cart } from '$lib/store';
+
+	export let product: Product;
+	export let fabio: Fabio | undefined;
 </script>
 
 <div class="product">
-<div>
-	<img
-		class="cover"
-		src={(!$page.url.pathname.includes('produkte/') ? 'produkte/' : '') + 'Bilder/' + product.img}
-		alt="Cover"
-	/>
-	{#if product.img.includes("keks")}
-	  <h4>#{product.img.split(".png")[0].split("keks/")[1]}</h4>
-      {$cart.some(item=>item.img===product.img)?`Schon ${$cart.filter(item=>item.img===product.img). length}x`:"Noch nicht"} gefunden.
-	{/if}
+	<div>
+		<img
+			class="cover"
+			src={(!$page.url.pathname.includes('produkte/') ? 'produkte/' : '') + 'Bilder/' + product.img}
+			alt="Cover"
+		/>
+		{#if product.img.includes('keks') && fabio !== undefined}
+			<h4>{fabio.name} (#{fabio.number})</h4>
+			<h6>
+				[{fabio.number % 2 === 0
+					? 'gewöhnlich'
+					: fabio.number % 3 === 0
+					? 'außergewöhnlich'
+					: fabio.number % 5 === 0
+					? 'vereinzelt'
+					: fabio.number % 7 === 0
+					? 'extrem rar, Bruder'
+					: fabio.number % 11 === 0
+					? 'selten'
+					: fabio.number % 13 === 0
+					? 'unnormal selten'
+					: fabio.number % 17 === 0
+					? 'legendär'
+					: 'häufig'}]
+			</h6>
+			{$cart.some((item) => item.img === product.img)
+				? `Schon ${$cart.filter((item) => item.img === product.img).length}x`
+				: 'Noch nicht'} gefunden.
+		{/if}
 	</div>
 	<div class="info">
 		<h2>{product.title}</h2>
