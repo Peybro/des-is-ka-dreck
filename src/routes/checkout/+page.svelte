@@ -5,7 +5,7 @@
 
 	export let data;
 
-	let bestellt = true;
+	let bestellt = false;
 
 	let name = '';
 	let street = '';
@@ -137,7 +137,6 @@
 	.bestellt {
 		display: flex;
 		flex-direction: column;
-		align-items: end;
 		gap: 1rem;
 	}
 </style>
