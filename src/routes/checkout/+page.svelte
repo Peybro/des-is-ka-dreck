@@ -113,6 +113,7 @@
 
 		input {
 			padding: 0.5rem;
+			width: 100%;
 		}
 	}
 
