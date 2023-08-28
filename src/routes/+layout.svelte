@@ -85,7 +85,7 @@
 
 	main {
 		background-color: #ffff00;
-		min-height: 100vh;
+		min-height: 100dvh;
 		padding: 1rem;
 	}
 </style>
