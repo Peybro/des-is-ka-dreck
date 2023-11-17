@@ -1,3 +1,3 @@
-# SvelteKit with scss - template
+# Des is ka Dreck!
 
-Edit global scss either in `src\style.scss` or in `src\routes\+layout.svelte`.
+... aber eine Fun-Seite für ein Geburtstagsgeschenk.
