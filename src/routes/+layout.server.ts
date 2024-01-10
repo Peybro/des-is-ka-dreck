@@ -11,6 +11,12 @@ export const load = () => {
 				img: 'wien.png'
 			},
 			{
+				title: "Ein Koch rettet die Welt",
+				price: 19.95,
+				content: "<h4>Ein Buch von Sternekoch Thomas K.</h4><h6>'Ein Meisterwerk' - NY Times</h6><h6>'Endlich ist der Meister wieder da' - Der Schmackofatz-Typ</h6><h6>'Grandios!' - Sir Thomaso 👨🏾‍🦰</h6><p>Endlich ein Buch über das harte Leben von Thomas K.</p><p>Von den Anfängen als L'apprenti de la Cuisine über seine Zeit als gefragter Directeur de Cuisine bis hin zu seinem Rückzug aus der Öffentlichkeit.</p><p><b>DOCH JETZT IST ER ZURÜCK!!</b> Die Vereinten Nationen brauchen ihn um die Welt zu retten und globalen Frieden herzustellen!!</p><p>Kann er diese große Aufgabe beweltigen? Und was hat eigentlich Danilo M. damit zu tun?.... Erfahren Sie es in diesem packenden Krimi!</p>",
+				img: 'ein-koch-rettet-die-welt.png'
+			},
+			{
 				title: 'Handbuch für medizinische Fußpflege',
 				price: 79.99,
 				content:
