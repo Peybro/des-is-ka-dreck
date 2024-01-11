@@ -8,7 +8,7 @@
 	export let products: ProductType[];
 
 	type Filter = 'all' | Category;
-	let filter: Filter = ($page.url.searchParams.get('filter') as Filter) || 'all';
+	let filter: Filter = 'all';
 
 	let categories = ['all', ...new Set(products.map((p) => p.category))];
 
@@ -21,14 +21,6 @@
 	}
 
 	$: filteredProducts = filter === 'all' ? products : products.filter((p) => p.category === filter);
-	$: {
-		if (browser && $page.url.pathname.includes('produkte'))
-			if (filter !== 'all') {
-				goto(`produkte/?filter=${filter}`);
-			} else {
-				goto('produkte');
-			}
-	}
 </script>
 
 <h2>Bücher</h2>
