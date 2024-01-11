@@ -2,11 +2,14 @@ type Person = {
 	name: string;
 };
 
+export type Category = 'depperl' | 'health' | 'food';
+
 export type Product = {
 	title: string;
 	price: number;
 	content: string;
 	img: string;
+	category: string;
 };
 
 export type Author = Person & {

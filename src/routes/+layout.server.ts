@@ -8,39 +8,47 @@ export const load = () => {
 				title: 'Wien für Fortgeschrittene Deppen',
 				price: 34.99,
 				content: '<h4>Ein Guide für die Stadt der Kultur</h4>',
-				img: 'wien.png'
+				img: 'wien.png',
+				category: 'depperl'
 			},
 			{
-				title: "Ein Koch rettet die Welt",
+				title: 'Ein Koch rettet die Welt',
 				price: 19.95,
-				content: "<h4>Ein Buch von Sternekoch Thomas K.</h4><h6>'Ein Meisterwerk' - NY Times</h6><h6>'Endlich ist der Meister wieder da' - Der Schmackofatz-Typ</h6><h6>'Grandios!' - Sir Thomaso 👨🏾‍🦰</h6><p>Endlich ein Buch über das harte Leben von Thomas K.</p><p>Von den Anfängen als L'apprenti de la Cuisine über seine Zeit als gefragter Directeur de Cuisine bis hin zu seinem Rückzug aus der Öffentlichkeit.</p><p><b>DOCH JETZT IST ER ZURÜCK!!</b> Die Vereinten Nationen brauchen ihn um die Welt zu retten und globalen Frieden herzustellen!!</p><p>Kann er diese große Aufgabe beweltigen? Und was hat eigentlich Danilo M. damit zu tun?.... Erfahren Sie es in diesem packenden Krimi!</p>",
-				img: 'ein-koch-rettet-die-welt.png'
+				content:
+					"<h4>Ein Buch von Sternekoch Thomas K.</h4><h6>'Ein Meisterwerk' - NY Times</h6><h6>'Endlich ist der Meister wieder da' - Der Schmackofatz-Typ</h6><h6>'Grandios!' - Sir Thomaso 👨🏾‍🦰</h6><p>Endlich ein Buch über das harte Leben von Thomas K.</p><p>Von den Anfängen als L'apprenti de la Cuisine über seine Zeit als gefragter Directeur de Cuisine bis hin zu seinem Rückzug aus der Öffentlichkeit.</p><p><b>DOCH JETZT IST ER ZURÜCK!!</b> Die Vereinten Nationen brauchen ihn um die Welt zu retten und globalen Frieden herzustellen!!</p><p>Kann er diese große Aufgabe beweltigen? Und was hat eigentlich Danilo M. damit zu tun?.... Erfahren Sie es in diesem packenden Krimi!</p>",
+				img: 'ein-koch-rettet-die-welt.png',
+				category: 'food'
 			},
 			{
 				title: 'Handbuch für medizinische Fußpflege',
 				price: 79.99,
 				content:
 					'<p>Podologiewissen kompakt<p><p>Leicht verständlich und gut illustriert vermittelt der Titel die Basics der podologischen Behandlung: Praxismanagement, Patientenkommunikation sowie ergänzende spezielle Techniken und Spezialverbände.</p><br><p>Kompakt und übersichtlich:</p><ul><li>fundiertes Wissen um Fuß und Pflege</li><li>eindrucksvolles Bildmaterial, insbesondere zu krankhaften Veränderungen</li><li>Abdeckung aller Inhalte der Ausbildungsordnung Podologie</li></ul><br><p>Dieses Handbuch ist "aus der Praxis für die Praxis" entstanden. Es richtet sich nicht nur an Podologen sondern auch an alle, die im Bereich der medizinischen Fußpflege bzw. Fußbehandlung tätig sind. Das versierte Autorenteam setzt sich überwiegend aus Dozenten der Schule für Podologie in Neuenbürg zusammen.</p>',
-				img: 'fußpflege.png'
+				img: 'fußpflege.png',
+				category: 'health'
 			},
 			{
 				title: 'Innsbruck für Depperl',
 				price: 24.95,
 				content:
 					'<p>Du willst nach Innsbruck reisen, aber du hast keine Ahnung, was dich dort erwartet? Kein Problem, wir haben den perfekten Reiseführer für dich:</p> <h4>"Innsbruck für Depperl - Ein humorvoller Guide für die Stadt der Berge</h4><p>In diesem Buch erfährst du alles, was du über Innsbruck wissen musst, von den besten Sehenswürdigkeiten über die leckersten Spezialitäten bis hin zu den lustigsten Aktivitäten.</p><p>Außerdem verraten wir dir, wie du dich mit den Einheimischen anfreundest, ohne dich zum Affen zu machen.</p><h3>Und das Beste:</h3><p>Dieser Reiseführer ist eine Hommage an unseren lieben Freund und Innsbruck-Laie, der uns immer wieder mit seinen Geschichten zum Lachen bringt.</p><br/><p>Also, worauf wartest du noch? Schnapp dir dieses Buch und mach dich auf den Weg nach Innsbruck - die Stadt der Berge und des Humors!</p>',
-				img: 'innsbruck-für-depperl.png'
+				img: 'innsbruck-für-depperl.png',
+				category: 'depperl'
 			},
-   {
-    title: 'Du Vollpfosten hast den Toast verbrannt - 7 Tipps für den perfekten Toast',
-    price: 45.99,
-    content: "<p>Du bist ein hoffnungsloser Fall in der Küche? Du schaffst es nicht mal, einen einfachen Toast zu machen, ohne ihn zu verkohlen? Du hast genug von deinem trockenen und geschmacklosen Frühstück? Dann ist dieses Buch genau das Richtige für dich!</p><p>In diesem Buch erfährst du, wie du mit einfachen Tricks und Tipps deinen Toast auf ein neues Level hebst. Du lernst, wie du die richtige Temperatur, Zeit und Technik für deinen Toaster wählst, wie du deinen Toast mit leckeren Belägen und Aufstrichen verfeinerst, und wie du aus deinem Toast kreative und köstliche Gerichte zauberst.</p><p>Mit diesem Buch wirst du nie wieder einen verbrannten Toast essen müssen. Stattdessen wirst du dich auf dein Frühstück freuen und deine Familie und Freunde mit deinen Toast-Kreationen beeindrucken. Also, worauf wartest du noch? Hol dir jetzt dieses Buch und werde zum Toast-Meister!</p>",
-    img: 'du-hast-den-toast-verbrannt.png'
-   },
+			{
+				title: 'Du Vollpfosten hast den Toast verbrannt - 7 Tipps für den perfekten Toast',
+				price: 45.99,
+				content:
+					'<p>Du bist ein hoffnungsloser Fall in der Küche? Du schaffst es nicht mal, einen einfachen Toast zu machen, ohne ihn zu verkohlen? Du hast genug von deinem trockenen und geschmacklosen Frühstück? Dann ist dieses Buch genau das Richtige für dich!</p><p>In diesem Buch erfährst du, wie du mit einfachen Tricks und Tipps deinen Toast auf ein neues Level hebst. Du lernst, wie du die richtige Temperatur, Zeit und Technik für deinen Toaster wählst, wie du deinen Toast mit leckeren Belägen und Aufstrichen verfeinerst, und wie du aus deinem Toast kreative und köstliche Gerichte zauberst.</p><p>Mit diesem Buch wirst du nie wieder einen verbrannten Toast essen müssen. Stattdessen wirst du dich auf dein Frühstück freuen und deine Familie und Freunde mit deinen Toast-Kreationen beeindrucken. Also, worauf wartest du noch? Hol dir jetzt dieses Buch und werde zum Toast-Meister!</p>',
+				img: 'du-hast-den-toast-verbrannt.png',
+				category: 'food'
+			},
 			{
 				title: 'Salzburg für Profi Depperl',
 				price: 39.99,
 				content: '<h4>Die Stadt der Musik</h4>',
-				img: 'salzburg.png'
+				img: 'salzburg.png',
+				category: 'depperl'
 			}
 		] as Product[],
 		authors: [

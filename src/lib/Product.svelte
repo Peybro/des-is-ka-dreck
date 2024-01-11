@@ -4,7 +4,7 @@
 	import { cart } from '$lib/store';
 
 	export let product: Product;
-	export let fabio: Fabio | undefined;
+	export let fabio: Fabio | undefined = undefined;
 </script>
 
 <div class="product">
