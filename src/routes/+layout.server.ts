@@ -30,6 +30,14 @@ export const load = () => {
 					'<p>Du willst nach Innsbruck reisen, aber du hast keine Ahnung, was dich dort erwartet? Kein Problem, wir haben den perfekten Reiseführer für dich:</p> <h4>"Innsbruck für Depperl - Ein humorvoller Guide für die Stadt der Berge</h4><p>In diesem Buch erfährst du alles, was du über Innsbruck wissen musst, von den besten Sehenswürdigkeiten über die leckersten Spezialitäten bis hin zu den lustigsten Aktivitäten.</p><p>Außerdem verraten wir dir, wie du dich mit den Einheimischen anfreundest, ohne dich zum Affen zu machen.</p><h3>Und das Beste:</h3><p>Dieser Reiseführer ist eine Hommage an unseren lieben Freund und Innsbruck-Laie, der uns immer wieder mit seinen Geschichten zum Lachen bringt.</p><br/><p>Also, worauf wartest du noch? Schnapp dir dieses Buch und mach dich auf den Weg nach Innsbruck - die Stadt der Berge und des Humors!</p>',
 				img: 'innsbruck-für-depperl.png'
 			},
+   {
+    title: 'Du Vollpfosten hast den Toast verbrannt – 7 Tipps für den perfekten Toast',
+    price: 45.99,
+    content: '<p>Du bist ein hoffnungsloser Fall in der Küche? Du schaffst es nicht mal, einen einfachen Toast zu machen, ohne ihn zu verkohlen? Du hast genug von deinem trockenen und geschmacklosen Frühstück? Dann ist dieses Buch genau das Richtige für dich!</p>
+<p>In diesem Buch erfährst du, wie du mit einfachen Tricks und Tipps deinen Toast auf ein neues Level hebst. Du lernst, wie du die richtige Temperatur, Zeit und Technik für deinen Toaster wählst, wie du deinen Toast mit leckeren Belägen und Aufstrichen verfeinerst, und wie du aus deinem Toast kreative und köstliche Gerichte zauberst.</p>
+<p>Mit diesem Buch wirst du nie wieder einen verbrannten Toast essen müssen. Stattdessen wirst du dich auf dein Frühstück freuen und deine Familie und Freunde mit deinen Toast-Kreationen beeindrucken. Also, worauf wartest du noch? Hol dir jetzt dieses Buch und werde zum Toast-Meister!</p>',
+    img: 'du-hast-den-toast-verbrannt.png'
+   },
 			{
 				title: 'Salzburg für Profi Depperl',
 				price: 39.99,
