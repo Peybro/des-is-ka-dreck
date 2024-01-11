@@ -31,11 +31,11 @@ export const load = () => {
 				img: 'innsbruck-für-depperl.png'
 			},
    {
-    title: 'Du Vollpfosten hast den Toast verbrannt – 7 Tipps für den perfekten Toast',
+    title: 'Du Vollpfosten hast den Toast verbrannt - 7 Tipps für den perfekten Toast',
     price: 45.99,
-    content: '<p>Du bist ein hoffnungsloser Fall in der Küche? Du schaffst es nicht mal, einen einfachen Toast zu machen, ohne ihn zu verkohlen? Du hast genug von deinem trockenen und geschmacklosen Frühstück? Dann ist dieses Buch genau das Richtige für dich!</p>
+    content: "<p>Du bist ein hoffnungsloser Fall in der Küche? Du schaffst es nicht mal, einen einfachen Toast zu machen, ohne ihn zu verkohlen? Du hast genug von deinem trockenen und geschmacklosen Frühstück? Dann ist dieses Buch genau das Richtige für dich!</p>
 <p>In diesem Buch erfährst du, wie du mit einfachen Tricks und Tipps deinen Toast auf ein neues Level hebst. Du lernst, wie du die richtige Temperatur, Zeit und Technik für deinen Toaster wählst, wie du deinen Toast mit leckeren Belägen und Aufstrichen verfeinerst, und wie du aus deinem Toast kreative und köstliche Gerichte zauberst.</p>
-<p>Mit diesem Buch wirst du nie wieder einen verbrannten Toast essen müssen. Stattdessen wirst du dich auf dein Frühstück freuen und deine Familie und Freunde mit deinen Toast-Kreationen beeindrucken. Also, worauf wartest du noch? Hol dir jetzt dieses Buch und werde zum Toast-Meister!</p>',
+<p>Mit diesem Buch wirst du nie wieder einen verbrannten Toast essen müssen. Stattdessen wirst du dich auf dein Frühstück freuen und deine Familie und Freunde mit deinen Toast-Kreationen beeindrucken. Also, worauf wartest du noch? Hol dir jetzt dieses Buch und werde zum Toast-Meister!</p>",
     img: 'du-hast-den-toast-verbrannt.png'
    },
 			{
