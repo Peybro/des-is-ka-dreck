@@ -5,6 +5,13 @@ export const load = () => {
 		title: 'Des is ka Dreck!',
 		products: [
 			{
+				title: 'Das Cockbook',
+				price: 28.99,
+				content: '<h4>I make YOU sexy!</h4><h6>Wenn Sie das schon immer wollten, schlagen Sie heute noch zu!!</h6>',
+				img: 'cockbook.png',
+				category: 'food'
+			},
+			{
 				title: 'Wien für Fortgeschrittene Deppen',
 				price: 34.99,
 				content: '<h4>Ein Guide für die Stadt der Kultur</h4>',
